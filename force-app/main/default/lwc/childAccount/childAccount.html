@@ -1,0 +1,17 @@
+<template>
+    <template if:true={childAccounts.data}>
+        <template for:each={childAccounts.data} for:item="childAcc">
+            
+            <p key={childAcc.Id}>
+                {childAcc.Name} <br>
+                {childAcc.BillingCountry} <br>
+                {childAcc.BillingState} <br>
+                {childAcc.BillingCity} <br>
+                
+            </p>
+        </template>
+
+    </template>
+
+</template>
+
